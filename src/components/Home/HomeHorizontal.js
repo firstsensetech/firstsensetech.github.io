@@ -32,14 +32,38 @@ function HomeHorizontal() {
         <div className="homehorizontal">
             <h1>Horizontal Focus</h1>
             <div className="homehorizontal__content">
-                {
+                {/* {
                     data.map((item, index) => (
                         <div className="homehorizontal__content-item">
                             <img src={item.image} />
                             <span><b>{item.title}</b></span>
                         </div>
                     ))
-                }
+                } */}
+                <div className="homehorizontal__content-first">
+                    <div className="homehorizontal__content-item">
+                        <img src={school} />
+                        <span><b>School and Universities</b></span>
+                    </div>
+                    <div className="homehorizontal__content-item">
+                        <img src={creches} />
+                        <span><b>Creches</b></span>
+                    </div>
+                </div>
+                <div className="homehorizontal__content-second">
+                    <div className="homehorizontal__content-item">
+                        <img src={certificate} />
+                        <span><b>Professional Certification</b></span>
+                    </div>
+                    <div className="homehorizontal__content-item">
+                        <img src={exam} />
+                        <span><b>Competitive Exams</b></span>
+                    </div>
+                    <div className="homehorizontal__content-item">
+                        <img src={language} />
+                        <span><b>Language Proficiency Tests</b></span>
+                    </div>
+                </div>
             </div>
         </div>
     )

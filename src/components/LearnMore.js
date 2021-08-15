@@ -10,7 +10,7 @@ function LearnMore() {
         <div className="learnMore">
             <NavBar />
             <div className="learnMore__datils">
-                <h1>Our Focus</h1>
+                {/* <h1>Our Focus</h1> */}
                 <div className="learnMore__details__block">
                     <div id="content">
                         <h3>EduTech</h3>

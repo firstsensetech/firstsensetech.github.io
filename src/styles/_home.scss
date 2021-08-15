@@ -11,6 +11,9 @@
     color: $banner-text-color;
     align-items: center;
     font-size: 3rem;
+    span{
+        text-align: center;
+    }
     div{
         margin-top:20px;
         border-radius: 30px;
@@ -19,12 +22,41 @@
         justify-content: center;
         font-size: 2rem;
         padding: 0px 20px;
+        span{
+            align-items: center;
+            display: flex;
+            height: 40px;
+        }
     }
 }
 .home__banner-right{
     display: flex;
     flex:0.4;
+    justify-content: center;
 }
+@media #{$media-mobile} {
+    .home__banner{
+        flex-direction: column-reverse;
+        height: 65vh;
+    }
+    .home__banner-right{
+        img{
+            width: 90%;
+        }
+    }
+    .home__banner-left{
+        flex:0.2;
+        padding: 0 30px;
+        justify-content: center;
+        align-items: center;
+        span{
+            font-size: 1rem;
+        }
+    }
+}
+
+
+//Solution
 
 .homeSolution{
     background-color: $secondary-color;
@@ -80,8 +112,40 @@
     padding: 50px;
     justify-content: center;
     // padding: 0 10%;
+    h2{
+        text-align: center;
+    }
+    p{
+        text-align: center;
+    }
 }
 
+@media #{$media-mobile} {
+    .homeSolution__block{
+        flex-direction: column;
+        .homeSolution__solution__image {
+            flex: 1;
+            width: 100%;
+            img {
+            object-fit: contain;
+            width: 100%;
+            }
+        }
+    }
+    .homeSolution__second{
+        flex-direction: column-reverse;
+    }
+    .homecontactus{
+        flex-direction: column;
+    }
+    .homeSolution__solution__text{
+        padding: 0;
+    }
+}
+
+
+
+// Need of Hour
 .homeneed{
     display: flex;
     flex-direction: column;
@@ -95,6 +159,7 @@
         font-size: 3rem;
         margin: 50px 0;
         text-decoration: underline;
+        text-align: center;
     }
 }
 .homeneed__block{
@@ -121,13 +186,33 @@
     color: #fff;
     // padding: 0 10%;
     p{
+        text-align: center;
         span{
             font-size: 2rem;
         }
     }
 }
 
+@media #{$media-mobile} {
+    .homeneed__block{
+        flex-direction: column;
+    }
+    .homeneed__image{
+        width: 100%;
+    }
+    .homeneed__content{
+        padding: 30px 0px;
+    }
+    #need_second{
+        flex-direction: column-reverse;
+    }
+}
 
+
+
+
+
+    // Horzontal Focus
 .homehorizontal{
     background-color: $secondary-color;
     display: flex;
@@ -144,9 +229,15 @@
         font-size: 3rem;
         margin: 50px 0;
         text-decoration: underline;
+        text-align: center;
     }
 }
 .homehorizontal__content{
+    display: flex;
+    flex-direction: column;
+}
+
+.homehorizontal__content-first, .homehorizontal__content-second{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -166,10 +257,14 @@
     }
     span{
         font-size: 1.7rem;
-        font-family: Montserrat;
+        font-family: $horizontalFont;
         padding: 5px;
+        text-align: center;
     }
 }
+
+
+//Contact Us
 .homecontactus{
     display: flex;
     justify-content: space-between;
@@ -246,45 +341,13 @@
         font-size: 1rem;
     }
 }
-
-
-
-
-
 @media #{$media-mobile} {
-    .home__banner{
-        flex-direction: column-reverse;
-        height: 100vh;
-    }
-    .home__banner-right{
-        img{
-            width: 90%;
-        }
-    }
-    .home__banner-left{
-        flex:0.2;
-        padding: 0 30px;
-        justify-content: center;
-        align-items: center;
-        span{
-            font-size: 1rem;
-        }
-    }
-    .homeSolution__block{
-        flex-direction: column;
-        .homeSolution__solution__image {
-            flex: 1;
-            width: 100%;
-            img {
-            object-fit: contain;
-            width: 100%;
-            }
-        }
-    }
-    .homeSolution__second{
-        flex-direction: column-reverse;
-    }
-    .homecontactus{
-        flex-direction: column;
+    .homecontactus__left{
+        padding: 0 10%;
     }
 }
+
+
+
+
+
