@@ -1,5 +1,25 @@
 .learnMore{
     .homecontactus{
+        background-color: $secondary-color;
+        padding-bottom: 20px;
+        margin-bottom: 0px;
+        .homecontactus__left__content{
+            p{
+                color: #000;
+            }
+        }
+        .homecontactus__right{
+            input{
+                background-color: $primary-color;
+                &::placeholder{
+                    color: #959ba9;
+                }
+            }
+            button{
+                background-color: $primary-color;
+                color: #fff;
+            }
+        }
     }
 }
 .learnMore__datils{
@@ -8,6 +28,7 @@
     justify-content: center;
     align-items: center;
     color: $heading-color;
+    margin: 0 10%;
     h1{
         text-decoration: underline;
     }
@@ -22,12 +43,14 @@
         flex-direction: column;
         flex:0.4;
         align-items: center;
-        padding: 50px 80px;
+        text-align: center;
+        padding: 50px 30px;
         h3{
-            font-size: 2rem;
+            font-size: 1.8rem;
+            text-decoration: underline;
         }
         p{
-            font-size: 1.8rem;
+            font-size: 1.5rem;
         }
     }
     #image{
@@ -39,4 +62,16 @@
         width: 300px;
         }
     }
+}
+
+@media #{$media-mobile} {
+    .learnMore__datils{
+        #second{
+            flex-direction: column-reverse !important;
+        }
+    }
+    .learnMore__details__block{
+        flex-direction: column;
+    
+}
 }

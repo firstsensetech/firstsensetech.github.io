@@ -11,8 +11,8 @@ function NavBar() {
                 </Link>
             </div>
             <div className="navbar__right">
-                <span>About Us</span>
-                <span>Team</span>
+                {/* <span>About Us</span>
+                <span>Team</span> */}
                 <a href="#contact_us"><span>Contact Us</span></a>
             </div>
         </div>

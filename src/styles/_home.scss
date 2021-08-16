@@ -3,6 +3,7 @@
     justify-content: space-around;
     height: 600px;
     align-items: center;
+    padding-bottom:20px;
 }
 .home__banner-left{
     display: flex;
@@ -10,7 +11,7 @@
     flex-direction: column;
     color: $banner-text-color;
     align-items: center;
-    font-size: 3rem;
+    font-size: 2rem;
     span{
         text-align: center;
     }
@@ -20,7 +21,7 @@
         color: $nav-text-color;
         background-color: $secondary-color;
         justify-content: center;
-        font-size: 2rem;
+        font-size: 1rem;
         padding: 0px 20px;
         span{
             align-items: center;
@@ -33,6 +34,9 @@
     display: flex;
     flex:0.4;
     justify-content: center;
+    img{
+        width: 100%;
+    }
 }
 @media #{$media-mobile} {
     .home__banner{
@@ -50,7 +54,7 @@
         justify-content: center;
         align-items: center;
         span{
-            font-size: 1rem;
+            font-size: 1.8rem;
         }
     }
 }
@@ -108,19 +112,27 @@
     display: flex;
     flex-direction: column;
     flex: 0.5;
-    font-size: 1.5rem;
+    // font-size: 1.5rem;
     padding: 50px;
     justify-content: center;
     // padding: 0 10%;
     h2{
         text-align: center;
+        font-size: 2rem;
     }
     p{
         text-align: center;
+        font-size: 1.3rem;
     }
 }
 
 @media #{$media-mobile} {
+    .homeSolution{
+        h1{
+            font-size: 2rem;
+            margin: 2rem 0;
+        }
+    }
     .homeSolution__block{
         flex-direction: column;
         .homeSolution__solution__image {
@@ -194,6 +206,12 @@
 }
 
 @media #{$media-mobile} {
+    .homeneed{
+        h1{
+            font-size: 2rem;
+            margin: 2rem 0;
+        }
+    }
     .homeneed__block{
         flex-direction: column;
     }
@@ -202,6 +220,9 @@
     }
     .homeneed__content{
         padding: 30px 0px;
+        p{
+            font-size: 1.2rem;
+        }
     }
     #need_second{
         flex-direction: column-reverse;
@@ -260,6 +281,25 @@
         font-family: $horizontalFont;
         padding: 5px;
         text-align: center;
+    }
+}
+@media #{$media-mobile} {
+    .homehorizontal{
+        h1{
+            font-size: 2rem;
+            margin: 2rem 0;
+        }
+    }
+    .homehorizontal__content{
+        width: 100vw;
+    }
+    .homeSolution__solution__text{
+        h2{
+            font-size: 1.6rem;
+        }
+        p{
+            font-size: 1.3rem;
+        }
     }
 }
 
@@ -344,6 +384,19 @@
 @media #{$media-mobile} {
     .homecontactus__left{
         padding: 0 10%;
+    }
+    .homecontactus__right{
+        input{
+            font-size: 1rem;
+        }
+    }
+}
+@media #{$media-tablet} {
+    .homecontactus__left{
+        padding: 0 50px;
+        h2{
+            font-size: 2rem;
+        }
     }
 }
 

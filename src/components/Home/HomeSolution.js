@@ -24,9 +24,9 @@ function HomeSolution() {
                     <img src={classroom} />
                 </div>
             </div>
-            <div>
+            {/* <div>
                 <span>Learn More → </span>
-            </div>
+            </div> */}
         </div>
     )
 }

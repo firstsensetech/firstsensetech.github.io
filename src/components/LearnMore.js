@@ -4,6 +4,7 @@ import school from '../Images/schoolUniversity.jpg'
 import transport from '../Images/transport.jpg'
 import healthcare from '../Images/healthcare.jpg'
 import HomeContactUs from './HomeContactUs'
+import HomeCopyright from '../components/Home/HomeCopyright'
 
 function LearnMore() {
     return (
@@ -11,7 +12,7 @@ function LearnMore() {
             <NavBar />
             <div className="learnMore__datils">
                 {/* <h1>Our Focus</h1> */}
-                <div className="learnMore__details__block">
+                <div className="learnMore__details__block" id="first">
                     <div id="content">
                         <h3>EduTech</h3>
                         <p>Hybrid Practoring Class Dynamics</p>
@@ -20,7 +21,7 @@ function LearnMore() {
                         <img src={school} />
                     </div>
                 </div>
-                <div className="learnMore__details__block">
+                <div className="learnMore__details__block" id="second">
                     <div id="image">
                         <img src={healthcare} />
                     </div>
@@ -40,6 +41,7 @@ function LearnMore() {
                 </div> */}
             </div>
             <HomeContactUs />
+            <HomeCopyright />
         </div>
     )
 }
