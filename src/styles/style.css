@@ -44,7 +44,7 @@ body {
           flex: 0.5;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  font-size: 1.3em;
+  font-size: 1.1em;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -198,9 +198,8 @@ body {
 
 .homeSolution h1 {
   color: #9C8266;
-  font-size: 3rem;
+  font-size: 2rem;
   margin: 50px 0;
-  text-decoration: underline;
 }
 
 .homeSolution div span {
@@ -333,9 +332,8 @@ body {
 
 .homeneed h1 {
   color: #9C8266;
-  font-size: 3rem;
+  font-size: 2rem;
   margin: 50px 0;
-  text-decoration: underline;
   text-align: center;
 }
 
@@ -437,9 +435,8 @@ body {
 
 .homehorizontal h1 {
   color: #9C8266;
-  font-size: 3rem;
+  font-size: 2rem;
   margin: 50px 0;
-  text-decoration: underline;
   text-align: center;
 }
 
@@ -543,13 +540,12 @@ body {
 }
 
 .homecontactus__left h2 {
-  font-size: 3rem;
   color: #9C8266;
 }
 
 .homecontactus__left p {
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .homecontactus__left .homecontactus__left__image {
@@ -765,12 +761,11 @@ body {
 }
 
 .learnMore__details__block #content h3 {
-  font-size: 1.8rem;
-  text-decoration: underline;
+  font-size: 1.4rem;
 }
 
 .learnMore__details__block #content p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .learnMore__details__block #image {

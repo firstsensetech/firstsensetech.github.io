@@ -11,25 +11,28 @@ function HomeContactUs() {
     const [message, setMessage] = useState('')
 
     const handleSubmit = (e) => {
-        const templateParams = {
-            from_name: "Website",
-            to_name: "Team",
-            notes: 'Got New Enquiry',
-            message: `${name} has sent equiry states "${message}" , email is:- ${email}`,
-        };
-        emailjs.send('service_xz92cpd', 'template_71mcls2', templateParams, 'user_haYL38NpbHghrwUFYwvZz')
-            .then((response) => {
-                console.log('SUCCESS!', response.status, response.text);
-                setName('')
-                setEmail('')
-                setMessage('')
-                alert('Thank you for your enquiry, we will get back to you soon.')
-                console.log(name, "name")
-            }, (err) => {
-                console.log('FAILED...', err);
-            });
 
-
+        if (name == '' || email == '' || message == '') {
+            alert('Please fill in all the fields')
+        } else {
+            const templateParams = {
+                from_name: "Website",
+                to_name: "Team",
+                notes: 'Got New Enquiry',
+                message: `${name} has sent equiry states "${message}" , email is:- ${email}`,
+            };
+            emailjs.send('service_xz92cpd', 'template_71mcls2', templateParams, 'user_haYL38NpbHghrwUFYwvZz')
+                .then((response) => {
+                    console.log('SUCCESS!', response.status, response.text);
+                    setName('')
+                    setEmail('')
+                    setMessage('')
+                    alert('Thank you for your enquiry, we will get back to you soon.')
+                    console.log(name, "name")
+                }, (err) => {
+                    console.log('FAILED...', err);
+                });
+        }
     }
 
     return (
