@@ -132,6 +132,9 @@
             font-size: 2rem;
             margin: 2rem 0;
         }
+        div{
+            margin-bottom: 50px;
+        }
     }
     .homeSolution__block{
         flex-direction: column;
@@ -147,9 +150,7 @@
     .homeSolution__second{
         flex-direction: column-reverse;
     }
-    .homecontactus{
-        flex-direction: column;
-    }
+
     .homeSolution__solution__text{
         padding: 0;
     }
@@ -256,6 +257,7 @@
 .homehorizontal__content{
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .homehorizontal__content-first, .homehorizontal__content-second{
@@ -277,7 +279,7 @@
         margin-top: 30px;
     }
     span{
-        font-size: 1.7rem;
+        font-size: 1.3rem;
         font-family: $horizontalFont;
         padding: 5px;
         text-align: center;
@@ -382,6 +384,9 @@
     }
 }
 @media #{$media-mobile} {
+    .homecontactus{
+        flex-direction: column;
+    }
     .homecontactus__left{
         padding: 0 10%;
     }
