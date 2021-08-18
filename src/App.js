@@ -2,12 +2,15 @@ import './App.css';
 import './styles/style.css'
 import Home from './components/Home/Home';
 import LearnMore from './components/LearnMore';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import {
   BrowserRouter as Router,
   Switch,
   Route,
 } from "react-router-dom";
 function App() {
+  AOS.init()
   return (
     <div className="App">
       <Router>

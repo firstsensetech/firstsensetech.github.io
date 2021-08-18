@@ -274,9 +274,16 @@
     align-items: center;
     width: 330px;
     img{
-        object-fit: contain;
-        width: 70%;
+        // object-fit: contain;
+        // width: 60%;
+        // border-radius: 25px;
+        // margin-top: 30px;
+
+        width: 15vw;
+        border-radius: 50%;
         margin-top: 30px;
+        height: 15vw;
+    
     }
     span{
         font-size: 1.3rem;

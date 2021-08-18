@@ -5,22 +5,22 @@ import classroom from '../../Images/classroom.jpg'
 function HomeSolution() {
     return (
         <div className="homeSolution">
-            <h1>Solution</h1>
+            <h1 data-aos="fade-down">Solution</h1>
             <div className="homeSolution__first homeSolution__block">
-                <div className="homeSolution__solution__image">
+                <div className="homeSolution__solution__image" data-aos="fade-right">
                     <img src={exam} />
                 </div>
-                <div className="homeSolution__solution__text">
-                    <h2>Automated Proctoring: </h2>
-                    <p>Automated Proctoring: Transform examinations into a process of improvement by eliminating the cost an inflexibility of manual proctoring</p>
+                <div className="homeSolution__solution__text" data-aos="fade-left">
+                    <h2>Automated Proctoring </h2>
+                    <p>Transform examinations into a process of improvement by eliminating the cost an inflexibility of manual proctoring</p>
                 </div>
             </div>
             <div className="homeSolution__second homeSolution__block">
-                <div className="homeSolution__solution__text">
+                <div className="homeSolution__solution__text" data-aos="fade-right">
                     <h2>Class Dynamics </h2>
                     <p>Transform examinations into a process of improvement by eliminating the cost an inflexibility of manual proctoring</p>
                 </div>
-                <div className="homeSolution__solution__image">
+                <div className="homeSolution__solution__image" data-aos="fade-left">
                     <img src={classroom} />
                 </div>
             </div>

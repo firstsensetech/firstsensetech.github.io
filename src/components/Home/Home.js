@@ -1,6 +1,7 @@
 import React, { useEffect, Suspense } from 'react'
 import HomeContactUs from '../HomeContactUs';
 import HomeCopyright from './HomeCopyright';
+import AOS from 'aos';
 const Banner = React.lazy(() => import('./Banner'));
 const HomeHorizontal = React.lazy(() => import('./HomeHorizontal'));
 const HomeNeed = React.lazy(() => import('./HomeNeed'));
@@ -9,6 +10,7 @@ const NavBar = React.lazy(() => import('../NavBar'));
 
 function Home() {
     useEffect(() => {
+        AOS.init()
         document.getElementsByTagName('title')[0].innerHTML = 'FirstSense';
     }, [])
     return (

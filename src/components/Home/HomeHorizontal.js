@@ -29,8 +29,8 @@ function HomeHorizontal() {
         }
     ]
     return (
-        <div className="homehorizontal">
-            <h1>Horizontal Focus</h1>
+        <div className="homehorizontal" >
+            <h1 data-aos="fade-down">Horizontal Focus</h1>
             <div className="homehorizontal__content">
                 {/* {
                     data.map((item, index) => (
@@ -41,25 +41,25 @@ function HomeHorizontal() {
                     ))
                 } */}
                 <div className="homehorizontal__content-first">
-                    <div className="homehorizontal__content-item">
+                    <div className="homehorizontal__content-item" data-aos="fade-up">
                         <img src={school} />
-                        <span><b>School and Universities</b></span>
+                        <span><b>Schools and Universities</b></span>
                     </div>
-                    <div className="homehorizontal__content-item">
+                    <div className="homehorizontal__content-item" data-aos="fade-up">
                         <img src={creches} />
                         <span><b>Creches</b></span>
                     </div>
                 </div>
                 <div className="homehorizontal__content-second">
-                    <div className="homehorizontal__content-item">
+                    <div className="homehorizontal__content-item" data-aos="fade-up">
                         <img src={certificate} />
                         <span><b>Professional Certification</b></span>
                     </div>
-                    <div className="homehorizontal__content-item">
+                    <div className="homehorizontal__content-item" data-aos="fade-up">
                         <img src={exam} />
                         <span><b>Competitive Exams</b></span>
                     </div>
-                    <div className="homehorizontal__content-item">
+                    <div className="homehorizontal__content-item" data-aos="fade-up">
                         <img src={language} />
                         <span><b>Language Proficiency Tests</b></span>
                     </div>
