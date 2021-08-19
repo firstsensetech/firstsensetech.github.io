@@ -12,6 +12,9 @@
         width: 300px;
         transform: scale(2.5);
     }
+    .MuiSvgIcon-root{
+        display: none;
+    }
 }
 .navbar__right{
     display: flex;
@@ -29,13 +32,26 @@
 }
 
 @media #{$media-mobile} {
+    .App{
+        overflow-x: hidden;
+    }
     .navbar{
-        width: 100vw;
+        width: 80vw;
         justify-content: center;
-        .navbar__left img {
+        margin: auto;
+        .navbar__left {
+            display: flex;
+            flex:1;
+            justify-content: space-between;
+            align-items: center;
+            img {
         transform: scale(1.4);
         width: auto;
         }
+        .MuiSvgIcon-root{
+            display: block;
+        }
+    }
 }
     .navbar__right{
         display: none;

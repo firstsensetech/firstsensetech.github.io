@@ -35,6 +35,10 @@ body {
           transform: scale(2.5);
 }
 
+.navbar__left .MuiSvgIcon-root {
+  display: none;
+}
+
 .navbar__right {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -60,16 +64,37 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
+  .App {
+    overflow-x: hidden;
+  }
   .navbar {
-    width: 100vw;
+    width: 80vw;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin: auto;
+  }
+  .navbar .navbar__left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .navbar .navbar__left img {
     -webkit-transform: scale(1.4);
             transform: scale(1.4);
     width: auto;
+  }
+  .navbar .navbar__left .MuiSvgIcon-root {
+    display: block;
   }
   .navbar__right {
     display: none;

@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import fsMainLogo from '../Images/MainLogo.svg'
+import ContactSupportIcon from '@material-ui/icons/ContactSupport';
+
 
 function NavBar() {
     return (
@@ -9,6 +11,7 @@ function NavBar() {
                 <Link to="/">
                     <img src={fsMainLogo} />
                 </Link>
+                <a href="#contact_us"><ContactSupportIcon /></a>
             </div>
             <div className="navbar__right">
                 {/* <span>About Us</span>
