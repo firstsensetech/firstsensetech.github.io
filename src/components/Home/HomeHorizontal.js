@@ -30,7 +30,7 @@ function HomeHorizontal() {
     ]
     return (
         <div className="homehorizontal" >
-            <h1 data-aos="fade-down">Horizontal Focus</h1>
+            <h1 data-aos="fade-down">Application Areas</h1>
             <div className="homehorizontal__content">
                 {/* {
                     data.map((item, index) => (

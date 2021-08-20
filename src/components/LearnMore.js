@@ -15,7 +15,7 @@ function LearnMore() {
                 <div className="learnMore__details__block" id="first">
                     <div id="content" data-aos="fade-left">
                         <h3>EduTech</h3>
-                        <p>Hybrid Practoring Class Dynamics</p>
+                        <p>Hybrid Practoring<br />Class Dynamics</p>
                     </div>
                     <div id="image" data-aos="fade-right">
                         <img src={school} />
@@ -27,7 +27,7 @@ function LearnMore() {
                     </div>
                     <div id="content" data-aos="fade-right">
                         <h3>Health Care</h3>
-                        <p>Fall detection Patient Monitoring Sports Medicine</p>
+                        <p>Fall detection<br />Patient Monitoring<br />Sports Medicine</p>
                     </div>
                 </div>
                 {/* <div className="learnMore__details__block">
